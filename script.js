@@ -39,7 +39,7 @@ const newLocal = `
         <div class="clients-container-box">
             <img src="./images/speaker_03.png" alt="client">
             <div class="clients-box-inner">
-                <h4>Amokonyak</h4>
+                <h4>Amokon</h4>
                 <div>Hr manager</div>
                 <div class="space-line"></div>
                 <p>The product he developed for our company is reliable</p>
