@@ -34,8 +34,19 @@ Git(Version Control)
 
 ## 🤝 Contributing
 
-**Paul**
-- GitHub: [@Ol-create](https://github.com/Ol-create "paul's GitHub profile")
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page]().
 
 
 ## Show your support
+
+Give a ⭐️ if you like this project!
+##Acknowledgments
+
+Cindy Shin (Original author)
+
+Bèhance: @adagio07
+LinkedIn: @adagio07
+Dribbble: @adagio07
+
