@@ -8,7 +8,7 @@
 -Javascript
 
 ## Live demo 
-[Live page]()
+[Live page](https://hadi111jafari.github.io/Hadi-m1-Capstone-Project/)
 
 ## Getting Started
 
@@ -36,7 +36,7 @@ Git(Version Control)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/Hadi111jafari/Hadi-m1-Capstone-Project/issues).
 
 
 ## Show your support
