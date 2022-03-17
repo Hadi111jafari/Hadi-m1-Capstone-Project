@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   margin: 0;
   padding: 0;
@@ -62,9 +64,11 @@ body {
   .hamburger {
     display: none;
   }
+
   #contact {
     border: 2px solid #ec5242;
   }
+
   #contact:hover {
     background-color: #ec5242;
   }
@@ -85,13 +89,12 @@ body {
     align-items: center;
     padding: 6% 8%;
     width: 80%;
-
   }
 
   .hadi-introduction h1 {
     color: #ec5242;
-    font-family: 'cocogoose';
-    font-size: 600;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: xx-large;
     line-height: 25px;
   }
 
@@ -102,10 +105,15 @@ body {
     margin: 10px;
   }
 
+  footer p {
+    text-align: center;
+    color: #8f8e8e;
+    padding: 20px;
+  }
+
   .hadi-introduction p {
     padding: 1rem;
     border: 1px solid rgb(241, 237, 237);
-    padding: 5px 10px;
     margin: 15px;
     background-color: #fff;
     color: gray;
@@ -113,53 +121,58 @@ body {
     width: 70%;
   }
 
-  .hadi-introduction  h2 {
-      padding: 15px;
-      color: gray;
-      font-size: medium;
+  .hadi-introduction h2 {
+    padding: 15px;
+    color: gray;
+    font-size: medium;
   }
 
   .hadi-introduction a {
-      color: rgb(68, 66, 66);
-      font-size: medium;
+    color: rgb(68, 66, 66);
+    font-size: medium;
   }
-   .workshop-container {
+
+  .workshop-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-   }
+  }
 
-   .workshop-container h2 {
+  .workshop-container h2 {
     padding: 20px 0 10px 0;
     font-size: 25px;
     color: rgba(0, 0, 0, 0.692);
-   }
-   .workshop-container p {
-     text-align: center;
-      color: #222121bd;
-      padding: 10px 10px 20px 10px;
-   }
-   .workshop {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     width: 50%;
-     margin-bottom: 100px;
-   }
-   .workshop1 {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     background-image: linear-gradient(rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url('./images/workshop1.jpg');
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
-     width: 100%;
-     height: 300px;
-     margin: 3px;
-     border-radius: 5px;
-   }
-   .workshop2 {
+  }
+
+  .workshop-container p {
+    text-align: center;
+    color: #222121bd;
+    padding: 10px 10px 20px 10px;
+  }
+
+  .workshop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 100px;
+  }
+
+  .workshop1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url('./images/workshop1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    margin: 3px;
+    border-radius: 5px;
+  }
+
+  .workshop2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,13 +184,14 @@ body {
     height: 300px;
     margin: 3px;
     border-radius: 5px;
-   
   }
+
   .workshop span {
     color: #fff;
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
     padding: 13% 13% 0 13%;
   }
+
   .workshop p {
     color: #fff;
     padding: 0 13% 0 13%;
@@ -197,18 +211,13 @@ body {
     height: 4rem;
     margin: 0 0 0 13%;
   }
-
-  footer p {
-    text-align: center;
-    color: #8f8e8e;
-    padding: 20px;
-  }
 }
 
 @media (max-width: 768px) {
   body.active {
     overflow: hidden;
   }
+
   .navbar {
     display: flex;
     flex-direction: row;
@@ -307,13 +316,12 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-
   }
 
   .hadi-introduction h1 {
     color: #ec5242;
-    font-family: 'cocogoose';
-    font-size: 600;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: xx-large;
     line-height: 25px;
     padding: 15px;
   }
@@ -325,63 +333,73 @@ body {
     margin: 10px;
   }
 
+  footer p {
+    text-align: center;
+    color: #8f8e8e;
+    padding: 20px;
+  }
+
   .hadi-introduction p {
     padding: 1rem;
     border: 1px solid rgb(241, 237, 237);
-    padding: 5px 10px;
     margin: 15px;
     background-color: #fff;
     color: gray;
     font-size: medium;
   }
 
-  .hadi-introduction  h2 {
-      padding: 15px;
-      color: gray;
-      font-size: medium;
+  .hadi-introduction h2 {
+    padding: 15px;
+    color: gray;
+    font-size: medium;
   }
 
   .hadi-introduction a {
     color: rgb(68, 66, 66);
-      font-size: medium;
+    font-size: medium;
   }
-   .workshop-container {
+
+  .workshop-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-   }
+  }
 
-   .workshop-container h2 {
+  .workshop-container h2 {
     padding: 20px 0 10px 0;
     font-size: 25px;
     color: rgba(0, 0, 0, 0.692);
-   }
-   .workshop-container p {
-     text-align: center;
-      color: #222121bd;
-      padding: 10px 10px 20px 10px;
-   }
-   .workshop {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     width: 90%;
-     margin-bottom: 100px;
-   }
-   .workshop1 {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     background-image: linear-gradient(rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url('./images/workshop1.jpg');
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
-     width: 100%;
-     height: 300px;
-     margin: 3px;
-     border-radius: 5px;
-   }
-   .workshop2 {
+  }
+
+  .workshop-container p {
+    text-align: center;
+    color: #222121bd;
+    padding: 10px 10px 20px 10px;
+  }
+
+  .workshop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 100px;
+  }
+
+  .workshop1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url('./images/workshop1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    margin: 3px;
+    border-radius: 5px;
+  }
+
+  .workshop2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -393,13 +411,14 @@ body {
     height: 300px;
     margin: 3px;
     border-radius: 5px;
-   
   }
+
   .workshop span {
     color: #fff;
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
     padding: 13% 13% 0 13%;
   }
+
   .workshop p {
     color: #fff;
     padding: 0 13% 0 13%;
@@ -418,11 +437,5 @@ body {
     width: 9rem;
     height: 4rem;
     margin: 0 0 0 13%;
-  }
-
-  footer p {
-    text-align: center;
-    color: #8f8e8e;
-    padding: 20px;
   }
 }

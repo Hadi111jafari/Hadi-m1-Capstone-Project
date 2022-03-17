@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,19 +11,21 @@ body {
   font-family: 'COCOGOOSE', sans-serif;
   font-family: "Lato", sans-serif;
 }
+
 .default {
   display: none;
 }
 
 @media (min-width: 769px) {
-
   .row {
     display: flex;
     flex-direction: row;
   }
+
   .more {
     display: none;
   }
+
   .navbar {
     display: flex;
     flex-direction: row;
@@ -69,9 +72,11 @@ body {
   .hamburger {
     display: none;
   }
+
   #contact {
     border: 2px solid #ec5242;
   }
+
   #contact:hover {
     background-color: #ec5242;
   }
@@ -98,17 +103,16 @@ body {
 
   .name {
     color: #ec5242;
-    font-size: 500;
+    font-size: medium;
     line-height: 30px;
     padding: 10px;
-
   }
 
   .hadi-introduction h1 {
     color: #ec5242;
-    font-size: 900;
+    font-size: xx-large;
     line-height: 25px;
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
   }
 
   .custom-h1 {
@@ -116,22 +120,26 @@ body {
     padding: 4px;
     display: block;
     color: #ec5242;
-    font-size: 900;
+    font-size: xx-large;
     line-height: 25px;
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
+  }
+
+  footer p {
+    text-align: center;
+    color: #8f8e8e;
+    padding: 20px;
   }
 
   .hadi-introduction p {
     padding: 1rem;
     border: 2px solid #fff;
-    padding: 5px 10px;
     margin: 10px;
     color: rgb(126, 123, 123);
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
     font-size: smaller;
     background-color: rgb(247, 247, 247);
     width: 70%;
-
   }
 
   .more-from-me-container {
@@ -148,7 +156,6 @@ body {
     padding: 20px 0 10px 0;
     font-size: 27px;
     color: #d3d3d3;
-
   }
 
   .saparator-line {
@@ -172,7 +179,12 @@ body {
     width: 25%;
     height: 11rem;
     background-color: #d3d3d33d;
+  }
 
+  footer img {
+    width: 9rem;
+    height: 4rem;
+    margin: 0 0 0 13%;
   }
 
   .more-from-me-box img {
@@ -191,6 +203,7 @@ body {
     color: #fff;
     padding: 10px;
   }
+
   .more-from-me-box:hover {
     border: 2px solid #fff;
     transform: scale(1.3);
@@ -202,12 +215,12 @@ body {
     align-items: center;
     background-color: #d3d3d3;
   }
+
   .clients-container h2 {
     font-size: 27px;
     color: #000;
     padding: 100px 10px 10px 10px;
   }
-  
 
   .clients-container-boxes {
     display: flex;
@@ -215,7 +228,6 @@ body {
     align-items: center;
     width: 40%;
   }
-  
 
   .clients-container-box {
     display: flex;
@@ -227,6 +239,7 @@ body {
   .clients-container-box img {
     padding: 10px;
   }
+
   .clients-box-inner {
     display: flex;
     flex-direction: column;
@@ -234,21 +247,26 @@ body {
     padding: 10px;
     margin-top: 17px;
   }
+
   .clients-box-inner h4 {
     font-size: 23px;
   }
+
   .clients-box-inner div {
     color: #ec5242;
   }
+
   .space-line {
     background-color: gray;
     width: 40px;
     height: 2px;
     margin: 13px;
   }
+
   .clients-box-inner p {
     color: rgb(29, 28, 28);
   }
+
   .partners-container {
     display: flex;
     flex-direction: column;
@@ -267,49 +285,43 @@ body {
     justify-content: center;
     padding: 35px;
   }
+
   .partners-inner h5 {
     padding: 1rem;
     line-height: 30px;
     color: #d3d3d3a9;
   }
+
   #mahdi {
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
     color: #d3d3d3a9;
-    
   }
+
   #nawroz {
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
     color: #d3d3d3a9;
   }
+
   footer {
     display: flex;
     flex-direction: row;
     background-color: rgb(240, 240, 240);
   }
-
-  footer img {
-    width: 9rem;
-    height: 4rem;
-    margin: 0 0 0 13%;
-  }
-
-  footer p {
-    text-align: center;
-    color: #8f8e8e;
-    padding: 20px;
-  }
 }
+
 @media (max-width: 768px) {
   .row {
     display: none;
   }
+
   .hideen-row {
     display: none;
   }
+
   .show {
     display: block;
   }
- 
+
   .navbar {
     display: flex;
     flex-direction: row;
@@ -320,7 +332,7 @@ body {
   .nav-branding {
     display: none;
   }
-  
+
   .nav-link {
     display: flex;
     flex-direction: row;
@@ -335,8 +347,7 @@ body {
     line-height: 44px;
     border-bottom: 1px solid #e638ac;
   }
- 
-  
+
   .bar {
     display: block;
     width: 20px;
@@ -353,7 +364,7 @@ body {
     cursor: pointer;
     z-index: 1;
   }
-  
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -364,14 +375,14 @@ body {
     position: fixed;
     cursor: pointer;
   }
-  
+
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-5.5px) rotate(-45deg);
     background-color: #fff;
     position: fixed;
     cursor: pointer;
   }
-  
+
   .nav-menu {
     position: fixed;
     right: -100%;
@@ -386,72 +397,75 @@ body {
     margin: 0;
     padding: 28px;
   }
-  
+
   .nav-item {
     margin: 16px 0;
   }
-  
+
   .nav-menu.active {
     right: 0;
     z-index: 1;
     backdrop-filter: blur(3px);
   }
+
   body.active {
     overflow: hidden;
   }
-  
+
   header {
     background-image: url("./images/mobile_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
   }
+
   .hadi-introduction {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: 25px;
   }
-  
+
   .hadi-introduction h1 {
     color: #ec5242;
-    font-size: 1200;
+    font-size: xx-large;
     line-height: 25px;
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
   }
-  
+
   .name {
     color: #ec5242;
-    font-size: 600;
+    font-size: medium;
     padding: 4px;
   }
-  
+
   .custom-h1 {
     text-transform: uppercase;
     padding: 4px;
     display: block;
     color: #ec5242;
-    font-size: 1200;
+    font-size: xx-large;
     line-height: 25px;
   }
-  
+
+  footer p {
+    text-align: center;
+    color: #8f8e8e;
+    padding: 20px;
+    font-size: smaller;
+  }
+
   .hadi-introduction p {
     padding: 1rem;
     border: 2px solid #fff;
-    padding: 5px 10px;
     margin: 10px;
     background-color: #fcfcfc;
     width: 100%;
     color: rgb(126, 123, 123);
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
     font-size: smaller;
   }
-  
-  .hadi-introduction h1 {
-    color: #ec5242;
-    font-size: 900;
-  }
-  
+
   .more-from-me-container {
     display: flex;
     flex-direction: column;
@@ -461,26 +475,26 @@ body {
     background-repeat: repeat;
     background-color: #272a31;
   }
-  
+
   .more-from-me-container h2 {
     padding: 20px 0 10px 0;
     font-size: 27px;
     color: #fff;
   }
-  
+
   .saparator-line {
     background-color: #ec5242;
     width: 40px;
     height: 2px;
   }
-  
+
   .more-from-me-boxes {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 15px 5px;
   }
-  
+
   .more-from-me-box {
     display: flex;
     flex-direction: row;
@@ -490,16 +504,22 @@ body {
     background-color: #d3d3d396;
     box-sizing: border-box;
   }
-  
+
+  footer img {
+    width: 9rem;
+    height: 4rem;
+    margin: 0 0 0 13%;
+  }
+
   .more-from-me-box img {
     width: 64px;
     height: 58px;
     padding: 10px;
   }
-  
+
   .more-from-me-box h3 {
     color: #ec5242;
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
     font-size: small;
     text-align: center;
     width: 20%;
@@ -510,34 +530,33 @@ body {
     text-align: center;
     color: #fff;
     padding: 10px;
-    text-align: start;
     width: 50%;
   }
+
   .more-from-me-box:hover {
     border: 2px solid #fff;
     transform: scale(1.2);
   }
+
   .clients-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #d3d3d3;
   }
+
   .clients-container h2 {
     font-size: 27px;
     color: #000;
     padding: 70px 10px 10px 10px;
   }
-  
-  
+
   .clients-container-boxes {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  
-  
+
   .clients-container-box {
     display: flex;
     flex-direction: row;
@@ -547,6 +566,7 @@ body {
   .clients-container-box img {
     padding: 10px;
   }
+
   .clients-box-inner {
     display: flex;
     flex-direction: column;
@@ -554,21 +574,26 @@ body {
     padding: 10px;
     margin-top: 17px;
   }
+
   .clients-box-inner h4 {
     font-size: 23px;
   }
+
   .clients-box-inner div {
     color: #ec5242;
   }
+
   .space-line {
     background-color: gray;
     width: 40px;
     height: 2px;
     margin: 13px;
   }
+
   .clients-box-inner p {
     color: rgb(29, 28, 28);
   }
+
   .more {
     font-size: 20px;
     display: flex;
@@ -579,57 +604,45 @@ body {
     padding: 10px;
     margin: 20px;
   }
-  
+
   .partners-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #272a31;
-    
   }
 
   .partners-container h2 {
-    color: #888888;
+    color: #888;
     padding: 30px 0 10px 0;
   }
-  
+
   .partners-inner {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 50px;
   }
+
   .partners-inner h5 {
     padding: 5px;
     line-height: 25px;
     color: #d3d3d3a9;
   }
+
   #mahdi {
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
     color: #d3d3d3a9;
-    
   }
+
   #nawroz {
-    font-family: 'cocogoose';
+    font-family: 'COCOGOOSE', sans-serif;
     color: #d3d3d3a9;
   }
+
   footer {
     display: flex;
     flex-direction: row;
     background-color: rgb(240, 240, 240);
   }
-  
-  footer img {
-    width: 9rem;
-    height: 4rem;
-    margin: 0 0 0 13%;
-  }
-  
-  footer p {
-    text-align: center;
-    color: #8f8e8e;
-    padding: 20px;
-    font-size: smaller;
-  }
 }
-
