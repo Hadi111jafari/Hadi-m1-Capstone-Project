@@ -17,11 +17,7 @@ body {
 }
 
 @media (min-width: 769px) {
-  .row {
-    display: flex;
-    flex-direction: row;
-  }
-
+ 
   .more {
     display: none;
   }
@@ -46,9 +42,11 @@ body {
   }
 
   .nav-branding {
-    width: 9rem;
+    width: 4.5rem;
     height: 4rem;
     margin: 0 0 0 13%;
+    border-radius: 50%;
+    padding: 5px;
   }
 
   .nav-link {
@@ -81,46 +79,37 @@ body {
     background-color: #ec5242;
   }
 
-  header {
+  .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-image: url("./images/desktop-background-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 700px;
+    height: 900px;
     width: 100%;
   }
-
+  
   .hadi-introduction {
     display: flex;
     flex-direction: column;
-    align-self: center;
-    width: 50%;
-    margin: 10rem 15rem;
+    padding: 8% 0 0 8% ;
+    margin-bottom: 35px;
   }
 
   .name {
     color: #ec5242;
-    font-size: medium;
+    font-size: 25px;
     line-height: 30px;
-    padding: 10px;
-  }
-
-  .hadi-introduction h1 {
-    color: #ec5242;
-    font-size: xx-large;
-    line-height: 25px;
-    font-family: 'COCOGOOSE', sans-serif;
+    padding: 0 0 16px 30px;
   }
 
   .custom-h1 {
     text-transform: uppercase;
-    padding: 4px;
+    padding: 28px;
     display: block;
     color: #ec5242;
-    font-size: xx-large;
+    font-size: 60px;
     line-height: 25px;
     font-family: 'COCOGOOSE', sans-serif;
   }
@@ -129,15 +118,41 @@ body {
     text-align: center;
     color: #8f8e8e;
     padding: 20px;
+    margin-top: 14px;
   }
 
   .hadi-introduction p {
-    padding: 1rem;
+    padding: 1.5rem;
     border: 2px solid #fff;
-    margin: 10px;
-    color: rgb(126, 123, 123);
+    margin-left: 40px;
+    color: rgb(75, 73, 73);
     font-family: 'COCOGOOSE', sans-serif;
-    font-size: smaller;
+    font-size: large;
+    background-color: rgb(247, 247, 247);
+    width: 70%;
+  }
+
+  .location-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 8%;
+  }
+
+  .location-container h2 {
+    font-size: 25px;
+    font-family: 'COCOGOOSE', sans-serif;
+    color: rgb(70, 68, 68);
+    margin-left: 40px;
+    padding-bottom: 10px;
+
+
+  }
+
+  .location-container p {
+    margin-left: 40px;
+    color: rgb(66, 62, 62);
+    font-family: sans-serif;
+    font-size: x-large;
     background-color: rgb(247, 247, 247);
     width: 70%;
   }
@@ -182,9 +197,11 @@ body {
   }
 
   footer img {
-    width: 9rem;
-    height: 4rem;
-    margin: 0 0 0 13%;
+    width: 7rem;
+    height: 6.5rem;
+    margin-left: 8%;
+    border-radius: 50%;
+    padding: 20px;
   }
 
   .more-from-me-box img {
@@ -223,17 +240,14 @@ body {
   }
 
   .clients-container-boxes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
+    display: grid;
+   grid-template-columns: 1fr 1fr;
   }
 
   .clients-container-box {
     display: flex;
     flex-direction: row;
     padding: 30px;
-    width: 50%;
   }
 
   .clients-container-box img {
@@ -246,13 +260,14 @@ body {
     align-items: start;
     padding: 10px;
     margin-top: 17px;
+    width: auto;
   }
 
   .clients-box-inner h4 {
     font-size: 23px;
   }
 
-  .clients-box-inner div {
+  .position {
     color: #ec5242;
   }
 
@@ -305,28 +320,24 @@ body {
   footer {
     display: flex;
     flex-direction: row;
-    background-color: rgb(240, 240, 240);
+    background-color: #d3d3d3;
+    height: 100px;
   }
 }
 
 @media (max-width: 768px) {
-  .row {
-    display: none;
+ 
+  .clients-container-boxes {
+    display: none !important;
   }
-
-  .hideen-row {
-    display: none;
-  }
-
-  .show {
-    display: block;
-  }
-
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 16px;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    border-bottom: 1px solid rgb(223, 220, 220);
   }
 
   .nav-branding {
@@ -411,41 +422,40 @@ body {
   body.active {
     overflow: hidden;
   }
-
-  header {
+  
+  .container {
+    display: flex;
+    flex-direction: column;
     background-image: url("./images/mobile_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    background-position: center center;
+    height: 900px;
+    width: 100%;
   }
-
   .hadi-introduction {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     margin: 25px;
-  }
-
-  .hadi-introduction h1 {
-    color: #ec5242;
-    font-size: xx-large;
-    line-height: 25px;
-    font-family: 'COCOGOOSE', sans-serif;
+    margin-top: 80px;
   }
 
   .name {
     color: #ec5242;
-    font-size: medium;
-    padding: 4px;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 10px 4px;
   }
 
   .custom-h1 {
     text-transform: uppercase;
-    padding: 4px;
+    font-family: 'COCOGOOSE', sans-serif;
     display: block;
     color: #ec5242;
-    font-size: xx-large;
-    line-height: 25px;
+    font-size: 40px;
+    line-height: 20px;
+    padding: 24px 0;
   }
 
   footer p {
@@ -453,18 +463,45 @@ body {
     color: #8f8e8e;
     padding: 20px;
     font-size: smaller;
+    margin-top: 14px;
   }
-
+  
   .hadi-introduction p {
     padding: 1rem;
     border: 2px solid #fff;
     margin: 10px;
     background-color: #fcfcfc;
     width: 100%;
-    color: rgb(126, 123, 123);
+    color: rgb(88, 86, 86);
     font-family: 'COCOGOOSE', sans-serif;
-    font-size: smaller;
+    font-size: large;
   }
+
+  .location-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 25px;
+    
+  }
+
+  .location-container h2 {
+    font-size: 25px;
+    font-family: 'COCOGOOSE', sans-serif;
+    color: rgb(70, 68, 68);
+    padding-bottom: 10px;
+
+
+  }
+
+  .location-container p {
+    color: rgb(66, 62, 62);
+    font-family: sans-serif;
+    font-size: x-large;
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+  }
+
 
   .more-from-me-container {
     display: flex;
@@ -506,9 +543,11 @@ body {
   }
 
   footer img {
-    width: 9rem;
-    height: 4rem;
+    width: 7rem;
+    height: 6.5rem;
     margin: 0 0 0 13%;
+    border-radius: 50%;
+    padding: 20px;
   }
 
   .more-from-me-box img {
@@ -643,6 +682,8 @@ body {
   footer {
     display: flex;
     flex-direction: row;
-    background-color: rgb(240, 240, 240);
+    justify-content: space-evenly;
+    background-color: #d3d3d3;
+    height: 100px;
   }
 }

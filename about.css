@@ -38,9 +38,11 @@ body {
   }
 
   .nav-branding {
-    width: 9rem;
+    width: 4.5rem;
     height: 4rem;
     margin: 0 0 0 13%;
+    border-radius: 50%;
+    padding: 5px;
   }
 
   .nav-link {
@@ -92,10 +94,13 @@ body {
   }
 
   .hadi-introduction h1 {
+    text-transform: uppercase;
+    padding: 28px;
+    display: block;
     color: #ec5242;
-    font-family: 'COCOGOOSE', sans-serif;
-    font-size: xx-large;
+    font-size: 60px;
     line-height: 25px;
+    font-family: 'COCOGOOSE', sans-serif;
   }
 
   .saparator-line {
@@ -107,29 +112,36 @@ body {
 
   footer p {
     text-align: center;
-    color: #8f8e8e;
+    color: #ece9e9;
     padding: 20px;
+    margin-top: 20px;
   }
 
   .hadi-introduction p {
-    padding: 1rem;
-    border: 1px solid rgb(241, 237, 237);
-    margin: 15px;
-    background-color: #fff;
-    color: gray;
-    font-size: medium;
-    width: 70%;
+    padding: 2rem;
+    border: 2px solid #fff;
+    color: rgb(116, 112, 112);
+    font-family: sans-serif;
+    font-size: large;
+    line-height: 25px;
+    font-weight: 600;
+    background-color: rgb(255, 254, 254);
   }
+  
+    
 
   .hadi-introduction h2 {
-    padding: 15px;
-    color: gray;
-    font-size: medium;
+    margin-top: 55px;
+    padding: 10px;
+    color: rgb(85, 84, 84);
+    font-size: large;
   }
 
   .hadi-introduction a {
-    color: rgb(68, 66, 66);
-    font-size: medium;
+    color: rgb(58, 56, 56);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
   }
 
   .workshop-container {
@@ -148,6 +160,7 @@ body {
     text-align: center;
     color: #222121bd;
     padding: 10px 10px 20px 10px;
+    font-size: 20px;
   }
 
   .workshop {
@@ -188,8 +201,10 @@ body {
 
   .workshop span {
     color: #fff;
-    font-family: 'COCOGOOSE', sans-serif;
-    padding: 13% 13% 0 13%;
+    padding: 110px 0 0 0 ;
+    margin: 16px 0 10px 0;
+    font-weight: 900;
+    font-size: 25px;
   }
 
   .workshop p {
@@ -200,16 +215,16 @@ body {
   footer {
     display: flex;
     flex-direction: row;
-    background-color: rgb(240, 240, 240);
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    background-color: #272a31;
+    height: 100px;
   }
 
   footer img {
-    width: 9rem;
-    height: 4rem;
-    margin: 0 0 0 13%;
+    width: 7rem;
+    height: 6.5rem;
+    margin-left: 8%;
+    border-radius: 50%;
+    padding: 20px;
   }
 }
 
@@ -308,7 +323,7 @@ body {
     background-image: url("./images/mobile_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 700px;
   }
 
   .hadi-introduction {
@@ -319,11 +334,13 @@ body {
   }
 
   .hadi-introduction h1 {
+    text-transform: uppercase;
+    padding: 28px;
+    display: block;
     color: #ec5242;
-    font-family: 'COCOGOOSE', sans-serif;
-    font-size: xx-large;
+    font-size: 60px;
     line-height: 25px;
-    padding: 15px;
+    font-family: 'COCOGOOSE', sans-serif;
   }
 
   .saparator-line {
@@ -335,28 +352,35 @@ body {
 
   footer p {
     text-align: center;
-    color: #8f8e8e;
+    color: #ece9e9;
     padding: 20px;
+    margin-top: 20px;
   }
 
   .hadi-introduction p {
-    padding: 1rem;
-    border: 1px solid rgb(241, 237, 237);
-    margin: 15px;
-    background-color: #fff;
-    color: gray;
-    font-size: medium;
+    padding: 2rem;
+    border: 2px solid #fff;
+    color: rgb(116, 112, 112);
+    font-family: sans-serif;
+    font-size: large;
+    line-height: 25px;
+    font-weight: 600;
+    background-color: rgb(255, 254, 254);
+    width: 90%;
   }
 
   .hadi-introduction h2 {
-    padding: 15px;
-    color: gray;
-    font-size: medium;
+    margin-top: 40px;
+    padding: 10px;
+    color: rgb(85, 84, 84);
+    font-size: large;
   }
 
   .hadi-introduction a {
-    color: rgb(68, 66, 66);
-    font-size: medium;
+    color: rgb(58, 56, 56);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
   }
 
   .workshop-container {
@@ -375,6 +399,7 @@ body {
     text-align: center;
     color: #222121bd;
     padding: 10px 10px 20px 10px;
+    font-size: large;
   }
 
   .workshop {
@@ -415,27 +440,31 @@ body {
 
   .workshop span {
     color: #fff;
-    font-family: 'COCOGOOSE', sans-serif;
-    padding: 13% 13% 0 13%;
+    padding: 110px 0 0 0 ;
+    margin: 16px 0 10px 0;
+    font-weight: 900;
+    font-size: 25px;
   }
 
   .workshop p {
     color: #fff;
-    padding: 0 13% 0 13%;
+    padding: 0 12% 0 12%;
+    font-weight: 300;
+    font-size: 20px;
   }
 
   footer {
     display: flex;
     flex-direction: row;
-    background-color: rgb(240, 240, 240);
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    background-color: #272a31;
+    height: 100px;
   }
-
+  
   footer img {
-    width: 9rem;
-    height: 4rem;
-    margin: 0 0 0 13%;
+    width: 7rem;
+    height: 6.5rem;
+    margin-left: 8%;
+    border-radius: 50%;
+    padding: 20px;
   }
 }

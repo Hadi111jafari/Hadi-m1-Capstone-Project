@@ -11,82 +11,71 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
   document.querySelector('body').classList.toggle('active');
 }));
-const newLocal = `       
-<h2>Clients Endoursments</h2>
-<div class="saparator-line"></div>
-<div class="clients-container-boxes">
-    <div class="row show">
-        <div class="clients-container-box">
-            <img src="./images/speaker_01.png" alt="client">
-            <div class="clients-box-inner">
-                <h4>Ali</h4>
-                <div>professor</div>
-                <div class="space-line"></div>
-                <p>I have been working with Hadi He is smart programmer</p>
-            </div>
-        </div>
-        <div class="clients-container-box">
-            <img src="./images/speaker_02.png" alt="client">
-            <div class="clients-box-inner">
-                <h4>mark</h4>
-                <div>manager</div>
-                <div class="space-line"></div>
-                <p>Hadi is pofessional developer</p>
-            </div>
-        </div>
-    </div>
-    <div class="row hidden-row">
-        <div class="clients-container-box">
-            <img src="./images/speaker_03.png" alt="client">
-            <div class="clients-box-inner">
-                <h4>Amokon</h4>
-                <div>Hr manager</div>
-                <div class="space-line"></div>
-                <p>The product he developed for our company is reliable</p>
-            </div>
-        </div>
-        <div class="clients-container-box">
-            <img src="./images/speaker_04.png" alt="client">
-            <div class="clients-box-inner">
-                <h4>Corilena</h4>
-                <div>Ceo of HMA company</div>
-                <div class="space-line"></div>
-                <p>It was my best choice that Hadi build my company website</p>
-            </div>
-        </div>
-    </div>
-    <div class="row hidden-row">
-        <div class="clients-container-box">
-            <img src="./images/speaker_05.png" alt="client">
-            <div class="clients-box-inner">
-                <h4>Jane</h4>
-                <div>HR manager</div>
-                <div class="space-line"></div>
-                <p>I am happy with my website build by Hadi </p>
-            </div>
-        </div>
-        <div class="clients-container-box">
-            <img src="./images/speaker_06.png" alt="client">
-            <div class="clients-box-inner">
-                <h4>Rauf</h4>
-                <div>Doctor</div>
-                <div class="space-line"></div>
-                <p>absolutly amazing programmer</p>
-            </div>
-        </div>
-    </div>
-    <button class="default more">MORE <img src="./images/down.png"></button>
-</div>`;
-const markup = newLocal;
 
-const clientsContainer = document.querySelector('.clients-container');
-clientsContainer.innerHTML = markup;
-const btnMore = document.querySelector('.more');
-const hiddenRows = document.querySelector('.hidden-row');
+const clientsData = [{
+  imgSrc: './images/speaker_01.png',
+  imgAlt: 'client1',
+  headingh4: 'Ali',
+  position: 'Professor',
+  paragraph: 'I have been working with Hadi He is smart programmer',
+},
+{
+  imgSrc: './images/speaker_02.png',
+  imgAlt: 'client2',
+  headingh4: 'Mark',
+  position: 'Manager',
+  paragraph: 'Hadi is professional developer',
+},
+{
+  imgSrc: './images/speaker_03.png',
+  imgAlt: 'client3',
+  headingh4: 'Amokonyak',
+  position: 'HR Manager',
+  paragraph: 'The product he developed for our company is reliable',
+},
+{
+  imgSrc: './images/speaker_04.png',
+  imgAlt: 'client4',
+  headingh4: 'Carolina',
+  position: 'CEO of HMA company',
+  paragraph: 'It was my best choice that Hadi build my company website',
+},
+{
+  imgSrc: './images/speaker_05.png',
+  imgAlt: 'client5',
+  headingh4: 'Jane',
+  position: 'HR Manager',
+  paragraph: 'I am happy with my website build by Hadi ',
+},
+{
+  imgSrc: './images/speaker_06.png',
+  imgAlt: 'client6',
+  headingh4: 'Rauf',
+  position: 'Doctor',
+  paragraph: 'absolutly amazing programmer',
+},
+];
 
-btnMore.addEventListener('click', () => {
-  for (let i = 0; i < hiddenRows.length; i += 1) {
-    hiddenRows[i].classList.add('show');
-    btnMore.classList.remove('more');
-  }
+function generateClientCard(card) {
+  return `<div class="clients-container-box">
+              <img src="${card.imgSrc}" alt="${card.imgAlt}">
+              <div class="clients-box-inner">
+                <h4>${card.headingh4}</h4>
+                <div class="position">${card.position}</div>
+                <div class="space-line"></div>
+                <p>${card.paragraph}</p>
+            </div>
+          </div>`;
+}
+
+const generatedCard = clientsData.map((card) => {
+  const cardContainer = document.createElement('div');
+  cardContainer.innerHTML = generateClientCard(card);
+  return cardContainer;
 });
+
+const clientsContainerBoxes = document.querySelector('.clients-container-boxes');
+
+for (let i = 0; i < clientsData.length; i += 1) {
+  clientsContainerBoxes.appendChild(generatedCard[i]);
+}
