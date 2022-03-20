@@ -5,7 +5,7 @@
 ## Built With
 - html
 - css
--Javascript
+- Javascript
 
 ## Live demo 
 [Live page](https://hadi111jafari.github.io/Hadi-m1-Capstone-Project/)
